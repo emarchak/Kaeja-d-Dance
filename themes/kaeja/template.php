@@ -145,13 +145,14 @@ function kaeja_preprocess_block(&$vars) {
 }
 function kaeja_process_block(&$vars) {
 }
-// */
-
+// 
+*/
 
 function kaeja_field__field_event_id(&$vars) {
 	$events = $vars['items'];
 	if (!empty($events)) {
 		$count = 0;
+		$items = array();
 		foreach ($events as $event) {
 			$eid = $event['#markup'];
 			$civicrm = db_select('civicrm_event', 'e')
@@ -163,6 +164,6 @@ function kaeja_field__field_event_id(&$vars) {
 			$items[$count] = $civicrm;
 			$count++;
 		}
-	$vars['events'] = $items;	
+	$vars['events'] = array( $items);	
 	}
 }
