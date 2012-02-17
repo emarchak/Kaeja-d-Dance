@@ -64,6 +64,13 @@ function kaeja_preprocess_page(&$vars) {
   }
   
   
+<<<<<<< HEAD
+=======
+  //ADD THESE AGAIN LATER
+  $vars['linked_site_logo'] = false;
+  $vars['hide_site_name'] = false;
+  
+>>>>>>> a04f9fa27e583765200848bed0167b712d8a6d8a
   // Pull out just the menu items we are going to render so that we get an accurate count for the first/last classes.
   foreach ($menu_tree as $data) {
     if (!$data['link']['hidden'] && ($mlid == $data['link']['mlid']) || (isset($rlid) && $rlid == $data['link']['mlid']) || ($plid == $data['link']['mlid'])) {
