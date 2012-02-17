@@ -1,0 +1,6 @@
+##### Sasson - advanced drupal theming. #####
+
+This is the directory for all your image files. 
+
+You know about css sprites right ? http://css-tricks.com/css-sprites
+Sasson can help you automagically create them : http://compass-style.org/help/tutorials/spriting/
